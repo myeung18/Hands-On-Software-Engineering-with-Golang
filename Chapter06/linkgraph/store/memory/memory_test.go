@@ -9,6 +9,7 @@ import (
 
 var _ = gc.Suite(new(InMemoryGraphTestSuite))
 
+//hook up
 func Test(t *testing.T) { gc.TestingT(t) }
 
 type InMemoryGraphTestSuite struct {

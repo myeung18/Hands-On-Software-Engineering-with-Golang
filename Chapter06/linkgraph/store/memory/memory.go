@@ -54,7 +54,7 @@ func (s *InMemoryGraph) UpsertLink(link *graph.Link) error {
 		return nil
 	}
 
-	// Assign new ID and insert link
+	// Assign new ID and insert link, loop unti
 	for {
 		link.ID = uuid.New()
 		if s.links[link.ID] == nil {
