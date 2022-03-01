@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestEnchantedSword_Damage(t *testing.T) {
+func testEnchantedSword_Damage(t *testing.T) {
 	type fields struct {
 		Sword Sword
 	}
@@ -45,7 +45,7 @@ func passInt(dae tstInt) {
 	fmt.Println(dae)
 }
 
-func TestSwordDamage(t *testing.T) {
+func testSwordDamage(t *testing.T) {
 
 	e := EnchantedSword{}
 	fmt.Println(e.Damage())
